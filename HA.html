@@ -1,0 +1,88 @@
+<html
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+        <link rel="shortcut icon" type="image/png" href="./hinh-anh-mau-banh-sinh-nhat-dep-nhat.jpg"/>
+
+        <!-- 1. Đây là phần title của website -->
+        <title>Chúc Mừng Sinh Nhật</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="container">
+            <!-- 2. Dòng chữ Happy Birthday
+            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+            <div class="balloon">
+                <div><span>H</span></div>
+                <div><span>A</span></div>
+                <div><span>P</span></div>
+                <div><span>P</span></div>
+                <div><span>Y</span></div>
+                <div><span>B</span></div>
+                <div><span>I</span></div>
+                <div><span>R</span></div>
+                <div><span>T</span></div>
+                <div><span>H</span></div>
+                <div><span>D</span></div>
+                <div><span>A</span></div>
+                <div><span>Y</span></div>
+            </div>
+            <div class="avatar">
+                <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                <img src="./z3885003568884_bd474fc73115c5964d88a02fd5ba0a41.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                <!-- 4. Tên của người đó -->
+                <h1 onclick="showMessage()" class="avatar__title">Huyền Anh</h1>
+            </div>
+            
+            <!-- 5. Phần nhạc -->
+            <audio id="player" autoplay loop>
+                <source src="./JIN The Astronaut Lyrics (진 The Astronaut 가사) (Color Coded Lyrics).mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Thư mời dự tiệc", // Tiêu đề của popup
+                    text: "Hế lô bé Na của anh, đây là sinh nhật đầu tiên tụi mình đón cùng nhau và anh rất mong chờ nó đến. Chúc em ngày càng xinh đẹp, giỏi giang, khỏe mạnh và luôn hạnh phúc bên anh, gia đình, bạn bè nha. Vào 19h30 17/11 mời em tham dự buổi tiệc nhỏ cùng anh, đón em tại 212A3 Nguyễn Trãi. Vào 12h 19/11 mời em tham dự buổi tiệc lớn, đón em tại 4 Nguyễn Thông. Huyền Anh mãi đỉnh, mãi yêu em <3", // Nội dung lời nhắn
+                    button: {
+                        text: "❤️️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
